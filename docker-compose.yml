@@ -3,6 +3,7 @@ version: "2"
 services:
   sonarqube:
     image: sonarqube:8.2-community
+    restart: always
     depends_on:
       - db
     ports:
@@ -20,6 +21,7 @@ services:
       - sonarqube_temp:/opt/sonarqube/temp
   db:
     image: postgres:14.1
+    restart: always
     networks:
       - sonarnet
     environment:
