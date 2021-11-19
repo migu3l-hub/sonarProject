@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 
 services:
   sonarqube:
-    image: sonarqube:8.2-community
+    image: sonarqube:9.1.0-community
     restart: always
     depends_on:
       - db
