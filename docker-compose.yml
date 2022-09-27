@@ -15,7 +15,7 @@ services:
       - /Sistemas/Sonarqube/sonarqube_extensions:/opt/sonarqube/extensions
       - /Sistemas/Sonarqube/sonarqube_logs:/opt/sonarqube/logs
     ports:
-      - "9000:9000"
+      - "9999:9000"
   db:
     image: postgres:12
     hostname: postgresql
